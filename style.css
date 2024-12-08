@@ -1,0 +1,248 @@
+.top-bar {
+    background-color: #f8f9fa;
+    padding: 5px 0;
+    font-size: 0.9rem;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+
+.news-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.learn-more-btn {
+    background-color: #00a97a;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.navbar {
+    background-color: #005675;
+}
+
+.nav-link {
+    color: white;
+}
+
+.top-bar {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.seed {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px;
+
+}
+
+.nav2 {
+    background-color: #00a97a;
+}
+
+.nav2:hover {
+    color: black;
+}
+
+.botao1 {
+    background-color: #00a97a;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.fundo1 {
+    background-color: #f8f9fa;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: black;
+}
+
+.badge {
+    background-color: #00a97a;
+}
+
+.split {
+    border-left: #00a97a 6px solid;
+    
+}
+
+.pub {
+    margin-left: 10px;
+}
+
+
+.botaodrop {
+    border: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 1px
+}
+
+.botaodrop1 {
+    color: white;
+    border: none;
+    position: relative;
+    bottom: 6px;
+    
+}
+
+li {
+    list-style: none;
+
+}
+
+.boldd {
+    font-weight: bold;
+    
+}
+
+
+.carousel-caption {
+    color: black;
+}
+
+.nletter {
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 2rem;
+  }
+  
+  .nletter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.portal.ap.gov.br/img/noticias/d2dfed150ba6079d4682d6f81966b5a0.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    z-index: -1;
+  }
+
+  .diariobnt {
+    border: none;
+    color: white;
+    padding: 8px;
+    border-radius: 7px;
+  }
+
+  .btncentro {
+    width: 20%;
+    margin: auto;
+  }
+  .banner1 img {
+    max-width: 450px;
+    max-height: 250px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.home-icon {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .home-icon {
+        display: block;
+    }
+}
+
+.gov {
+    width: 280px;
+    height: 130px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand .seed {
+        display: none;
+    }
+}
+
+.nav-link, .botaodrop {
+    font-size: 1rem;
+    line-height: 2rem; 
+    padding: 0.5rem 1rem; 
+   
+    text-decoration: none; 
+}
+
+
+.botaodrop {
+    background-color: none; 
+    border: none; 
+    font-weight: bold; 
+}
+
+
+.nav-link:hover, .botaodrop:hover {
+    color: black; 
+}
+
+
+.dropdown-menu {
+    font-size: 0.9rem; 
+   background-color: white;
+   color: white;
+   border: none;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem; 
+}
+
+.select-custom {
+    font-size: 16px; 
+    line-height: 1.5; 
+    max-width: 100%; 
+    padding-right: 2rem; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-radius: 5px; 
+    line-height: 1.5;
+
+  }
+  .select-custom:focus {
+    outline: none;
+  }
+  
+  /* Dropdown items */
+  .dropdown-item {
+    font-size: 16px; 
+    line-height: 1.5; 
+  }
+
