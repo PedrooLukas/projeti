@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEED</title>
+    <script src="https://kit.fontawesome.com/9d29b27add.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="top-bar">
@@ -23,7 +28,7 @@
             <div class="navbar-header d-flex align-items-center">
                 <a class="navbar-brand d-flex align-items-center" href="#">
                     <img src="https://sead.portal.ap.gov.br/img/brasao_topo.png" alt="Logo" class="logo me-2" style="height: 40px;">
-                    <span class="seed">GOVERNO DO ESTADO DO AMAPÁ</span>
+                    <span class="seed text-white">GOVERNO DO ESTADO DO AMAPÁ</span>
                 </a>
             </div>
             
@@ -63,7 +68,7 @@
     <!-- nav bar 2 -->
     <nav class="navbar navbar-expand-lg bg-success text-white py-2">
         <div class="container">
-            <div class="d-flex align-items-center justify-content-between w-100">
+            <div class="d-flex justify-content-between align-items-center w-100">
                 <!-- Itens de Navegação para Telas Grandes -->
                 <div class="d-none d-md-flex gap-4 align-items-center">
                     <div class="dropdown">
@@ -76,6 +81,9 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link boldd" href="#">Diário Oficial</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link boldd" href="#">Serviços</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <button class="botaodrop btn btn-sucess dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -103,6 +111,12 @@
                 <!-- Ícone "home" -->
                 <a href="/" class="text-dark text-decoration-none d-md-none align-items-center home-icon">
                     <i class="bi bi-house-fill"></i>
+                </a>
+            </div>
+            <div class="d-flex align-items-center justify-content-end">
+                <input class="barrapesquisa me-2" type="text" placeholder=" Pesquisar">
+                <a href="">
+                <i class="fa-solid fa-magnifying-glass fa-fade fa-lg" style="color: #ffffff;"></i>
                 </a>
             </div>
         </div>
@@ -157,7 +171,7 @@
                                     
                                 </div>
                             </div>
-                            <div class="carousel-item active position-relative">
+                            <div class="carousel-item position-relative">
                                 <img src="https://placehold.co/600x400" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-flex flex-column justify-content-end align-items-center text-center position-absolute w-100 h-100 top-0 start-0 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);">
                                     <div class="mt-auto pb-3">
@@ -168,7 +182,7 @@
                                     
                                 </div>
                             </div>
-                            <div class="carousel-item active position-relative">
+                            <div class="carousel-item position-relative">
                                 <img src="https://placehold.co/600x400" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-flex flex-column justify-content-end align-items-center text-center position-absolute w-100 h-100 top-0 start-0 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);">
                                     <div class="mt-auto pb-3">
@@ -179,7 +193,7 @@
                                     
                                 </div>
                             </div>
-                            <div class="carousel-item active position-relative">
+                            <div class="carousel-item position-relative">
                                 <img src="https://placehold.co/600x400" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-flex flex-column justify-content-end align-items-center text-center position-absolute w-100 h-100 top-0 start-0 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);">
                                     <div class="mt-auto pb-3">
@@ -336,42 +350,224 @@
     </div>
 </div>
 </section>
-<!--newsletter-->
-  <section>
-  <div class="container nletter">
-    <h2 class="mt-5 mb-5 split"><span class="pub text-white bg-dark bg-opacity-50">NEWSLETTER</span></h2>
-    <h5 class="mb-3 text-white bg-dark bg-opacity-50">Receba as ultimas notícias no seu email! </h5>
-    
-    <form class="row gx-3 gy-2 align-items-center">
-      <div class="col-sm-3">
-        <label class="visually-hidden" for="specificSizeInputName">Nome</label>
-        <input type="text" class="form-control" id="specificSizeInputName" placeholder="Nome">
-      </div>
-      <div class="col-sm-3">
-        <label class="visually-hidden" for="specificSizeInputGroupUsername">Email</label>
-        <div class="input-group">
-          <div class="input-group-text">@</div>
-          <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Email">
+<!-- LINKS UTEIS COM O CARROSSEL OWL-->
+<section>
+    <div class="container mb-5">
+        <h2 class="mb-5 split"><span class="pub">LINKS ÚTEIS</span></h2>
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >INFORMAÇÃO AO CIDADÃO</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >OUV</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >PORTAL DA TRANSPARÊNCIA</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >PORTAL DE SERVIÇOS</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >PORTAL DO GOVERNO</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >PORTAL DO SERVIDOR</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >PROCESSO SELETIVO</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >PRODOC</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >PROTEÇÃO</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >REDE MAIS BRASIL</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >AGENDA DO SERVIDOR</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >CERTIDÃO FUNCIONAL</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >E-DOC</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
+                                    <hr/>
+                                    <h4 class="text-center util" >E-SIC</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+</section>
+<!--FOOTER (AMÉM)-->
+<section>
+    <footer class="footer">
+        <div class="container">
+        <footer class="footer">
+            <div class="footer-top">
+              <div class="footer-column">
+                <h3 class="footer-title">Cidadão</h3>
+                <ul class="footer-list">
+                  <li><a href="#">2ª via da conta de água</a></li>
+                  <li><a href="#">2ª via da conta de energia</a></li>
+                  <li><a href="#">Boletim de Ocorrência (online)</a></li>
+                  <li><a href="#">Concursos</a></li>
+                  <li><a href="#">Consultas de veículos</a></li>
+                  <li><a href="#">Consultar habilitação</a></li>
+                  <li><a href="#">Matrícula 2024</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3 class="footer-title">Servidores</h3>
+                <ul class="footer-list">
+                  <li><a href="#">Certidão Funcional</a></li>
+                  <li><a href="#">Consgignataria Online</a></li>
+                  <li><a href="#">Contra-cheque</a></li>
+                  <li><a href="#">Serviços do Servidor Federal</a></li>
+                  <li><a href="#">Solicitar Certidão de tempo de serviço</a></li>
+                  <!-- Additional categories... -->
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3 class="footer-title">Empresas</h3>
+                <ul class="footer-list">
+                  <li><a href="#">Cadastro de Fornecedores</a></li>
+                  <li><a href="#">Certidão Negativa</a></li>
+                  <li><a href="#">DAR Avulso</a></li>
+                  <li><a href="#">DIAP ICMS Eletrônica</a></li>
+                  <li><a href="#">Justificativas</a></li>
+                  <li><a href="#">Licitações do Estado</a></li>
+                  <!-- Additional categories... -->
+                </ul>
+              </div>
+              <div class="footer-column-">
+                <h1 class="footer-title">SEED</h1>
+                <h3 class="footer-title">Fale conosco</h3>
+                <p class="footer-contact">seed@seed.ap.gov.br</p>
+                <div class="footer-social">
+                  <a href="https://www.facebook.com/governoamapa" class="footer-social-link">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.instagram.com/governoamapa/" class="footer-social-link">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://x.com/governodoamapa" class="footer-social-link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; Desenvolvido por Pedro Lukas, Ana Viana e Cassio Gabriel</p>
+            </div>
+          </footer>
         </div>
-      </div>
-      <div class="col-sm-3">
-        <label class="visually-hidden" for="specificSizeInputGroupUsername">Celular</label>
-        <div class="input-group">
-          <div class="input-group-text">+55</div>
-          <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Celular">
-        </div>
-      </div>
-      <div class="col-auto">
-        <button type="submit" class="btn botao1">Cadastro</button>
-      </div>
-    </form>
-  </section>
-
-  <section>
-    <iframe src="" frameborder="0"></iframe>
-  </section>
-   
+      </footer>
+</section>
   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: { items: 1 },
+                600: { items: 3 },
+                1000: { items: 3 }
+            }
+        });
+    });
+</script>
 </body>
 </html>
